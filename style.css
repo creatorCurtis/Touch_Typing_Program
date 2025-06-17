@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+h3 {
+  color: #ffd700;
+  font-size: 24px;
+}
+.text-display {
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-display span.correct { color: #0f0; }
+.text-display span.incorrect { color: #f00; }
+input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+}
+.meters {
+  font-size: 20px;
+  font-weight: bold;
+}
+#leaderboard {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 300px;
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+#leaderboard.show {
+  display: block;
+  opacity: 1;
+  max-height: 1000px;
+}
+#leaderboard-list li {
+  background: white;
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+#toggleLeaderboardBtn {
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #2a2a3d;
+  color: white;
+  border: none;
+}
+.improve {
+  color: lightgreen;
+  font-weight: bold;
+}
+.decline {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Typing App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🔥Typing Practice🔥</h1>
+  <input id="username" type="text" placeholder="Enter your username" autocomplete="off" />
+  <div id="wordLine" class="text-display"></div>
+  <input id="inputEl" placeholder="Start typing here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+  <div class="meters">
+    <div>⚡WPM: <span id="wpm">0</span></div>
+    <div>🎯Accuracy: <span id="accuracy">100</span>%</div>
+    <div>⌚Time: <span id="timer">0</span>s</div>
+  </div>
+  <div id="keyboardVisualizer"></div>
+  <button id="toggleLeaderboardBtn" onclick="toggleLeaderboard()">👀 Show leaderboard</button>
+  <div id="leaderboard">
+    <h3>🏆Leaderboard</h3>
+    <div id="leaderboard-list"></div>
+  </div>
+  <div id="performance-message" style="display: none; margin-top: 1em; padding: 1em; background-color: #333; color: #fff; border-radius: 10px;"></div>
+  <script src="script.js"></script>
+</body>
+</html>
